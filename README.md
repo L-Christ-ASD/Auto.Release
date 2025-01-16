@@ -1,7 +1,7 @@
 # s09_challenge_Latest  
 
-![debug_env_execution_infos](https://github.com/o-devops/doc/actions/workflows/action.yml/badge.svg)
-![release after debug](https://github.com/o-devops/doc/actions/workflows/release.yml/badge.svg)
+![debug_env_execution_infos](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/action.yml/badge.svg)
+![release after debug](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/release.yml/badge.svg)
 
 
 ### CI/CD
@@ -36,7 +36,7 @@ Versions ultérieures : Pour les versions ultérieures, le numéro de version se
 
 feat : Une nouvelle fonctionnalité, entraînant un incrément de version mineur (1.1.0).
 
-fix : correction d’un bogue, entraînant un incrément de version de correctif (1.0.1).
+fix : correction d’un "bug", entraînant un incrément de version de correctif (1.0.1).
 
 CHANGEMENT CASSANT : Un incrément de version majeur (2.0.0).
 
