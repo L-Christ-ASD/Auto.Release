@@ -14,7 +14,8 @@
 
 3. publiez l'action sur le marketplace via une release Github (un raccourci va apparaître pour la publication directement dans votre dépôt)  
 
-**Bonus** :  essayez de publier automatique vos release, la méthode est libre, voici quelques liens vers des automatisation :  
+### Bonus :  
+    Essayez de publier automatique vos release, la méthode est libre, voici quelques liens vers des automatisation :  
 
    * [Release-exemple-1](https://github.com/marketplace/actions/release-please-action )   
    * [Release-exemple-2](https://github.com/marketplace/actions/automatic-releases ) 
@@ -22,5 +23,5 @@
 
 ## Documentations autour de la CI/CD et de Github  
 
-[Utilisation des tags - DevOps Docs](https://o-devops.github.io/doc/git/git-tag/https://o-devops.github.io/doc/git/git-tag/)
+[Documentation](https://o-devops.github.io/doc/git/git-tag/)
 
