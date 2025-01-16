@@ -1,6 +1,6 @@
 # s09_challenge_Latest  
 
-![debug_env_execution_infos](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/action.yml/badge.svg)
+![debug env execution infos](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/action.yml/badge.svg)
 ![release after debug](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/release.yml/badge.svg)
 
 
