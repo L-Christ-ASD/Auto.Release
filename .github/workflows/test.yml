@@ -1,5 +1,5 @@
 ---
-name: just debug execution
+name: just debug steps of execution
 on:
   push:
 
