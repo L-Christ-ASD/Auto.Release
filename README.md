@@ -1,6 +1,10 @@
 # s09_challenge_Latest  
-### CI/CD
 
+![debug_env_execution_infos](https://github.com/o-devops/doc/actions/workflows/action.yml/badge.svg)
+![release after debug](https://github.com/o-devops/doc/actions/workflows/release.yml/badge.svg)
+
+
+### CI/CD
 
 
 1. créez une action Github personnalisée en vous basant sur une des deux actions :  
@@ -15,8 +19,7 @@
 3. publiez l'action sur le marketplace via une release Github (un raccourci va apparaître pour la publication directement dans votre dépôt)  
 
 ### Bonus :  
-    Essayez de publier automatique vos release, la méthode est libre, voici quelques liens vers des automatisation :  
-
+Essayez de publier automatique vos release, la méthode est libre,  voici quelques liens vers des automatisation :  
    * [Release-exemple-1](https://github.com/marketplace/actions/release-please-action )   
    * [Release-exemple-2](https://github.com/marketplace/actions/automatic-releases ) 
 
@@ -24,4 +27,20 @@
 ## Documentations autour de la CI/CD et de Github  
 
 [Documentation](https://o-devops.github.io/doc/git/git-tag/)
+
+
+
+***Good to know***:  
+
+Versions ultérieures : Pour les versions ultérieures, le numéro de version sera incrémenté en fonction des commits. Par exemple:
+
+feat : Une nouvelle fonctionnalité, entraînant un incrément de version mineur (1.1.0).
+
+fix : correction d’un bogue, entraînant un incrément de version de correctif (1.0.1).
+
+CHANGEMENT CASSANT : Un incrément de version majeur (2.0.0).
+
+Tant que vos commits suivent les normes de commit conventionnelles, release-please-action déterminera automatiquement la version appropriée. S’il n’y a pas encore de balises de version, il créera la première pour vous lorsque vous pousserez les modifications vers la branche principale.
+
+Souhaitez-vous plus de détails sur la façon de configurer les commits conventionnels ou autre chose ? Tenez moi informé!
 

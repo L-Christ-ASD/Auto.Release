@@ -1,6 +1,6 @@
 ---
 
-name: 'debug-info'
+name: debug_env_execution_infos
 description: 'debug our environment execution'
 
 branding:
