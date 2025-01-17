@@ -59,7 +59,7 @@ skip-github-pull-request: false indique que la pull request GitHub ne doit pas Ã
 
 
 
-## exemple de workflow
+## exemple de workflow:
 
 ```
 name: release after debug
@@ -97,3 +97,4 @@ jobs:
             skip-github-pull-request: false
 
 ```
+
