@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/L-Christ-ASD/automatic-Release-action/compare/v0.4.0...v0.5.0) (2025-01-17)
+
+
+### Features
+
+* A major version0.4 ([95e6c7a](https://github.com/L-Christ-ASD/automatic-Release-action/commit/95e6c7a509840f07b9e13da58e687f2817703b09))
+
 ## [0.4.0](https://github.com/L-Christ-ASD/automatic-Release-action/compare/v0.3.1...v0.4.0) (2025-01-17)
 
 
