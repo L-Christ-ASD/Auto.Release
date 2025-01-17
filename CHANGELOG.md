@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/L-Christ-ASD/Auto.Release/compare/v0.3.0...v0.3.1) (2025-01-17)
+
+
+### Bug Fixes
+
+* change release-name ([ff15033](https://github.com/L-Christ-ASD/Auto.Release/commit/ff15033c9a77c3aca6c3eb5bf0b76e140f42cd30))
+
 ## [0.3.0](https://github.com/L-Christ-ASD/s09_challenge_Latest/compare/v0.2.0...v0.3.0) (2025-01-17)
 
 
