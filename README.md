@@ -1,4 +1,4 @@
-# s09_challenge_Latest  
+# automatic-Release-action 
 
 ![just debug steps of execution](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/test.yml/badge.svg)
 ![release after debug](https://github.com/L-Christ-ASD/s09_challenge_Latest/actions/workflows/release.yml/badge.svg)
@@ -84,7 +84,7 @@ jobs:
           run: |
             echo "done!"
 
-        - uses: L-Christ-ASD/automatic-Release-action@v4
+        - uses: L-Christ-ASD/automatic-Release-action@v0.4
           with:
             # this assumes that you have created a personal access token
             # (PAT) and configured it as a GitHub action secret named
