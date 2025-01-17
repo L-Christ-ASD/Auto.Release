@@ -44,3 +44,20 @@ Tant que vos commits suivent les normes de commit conventionnelles, release-plea
 
 Souhaitez-vous plus de détails sur la façon de configurer les commits conventionnels ou autre chose ? Tenez moi informé!
 
+
+## Summary  
+
+This workflow automates the process of releasing new versions of your project whenever you push changes to the main branch. It uses Google’s release-please-action to handle the creation of release pull requests and GitHub releases.
+
+This step uses the release-please action from Google to automate the release process.
+
+The token input uses a personal access token stored as a secret in GitHub secrets (MY_RELEASE_TEST).
+
+The release-type is set to simple, which is one of the strategies available in release-please.
+
+skip-github-release: false indicates that the GitHub release should not be skipped.
+
+skip-github-pull-request: false indicates that the GitHub pull request should not be skipped.
+
+
+
