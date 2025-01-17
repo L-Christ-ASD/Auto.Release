@@ -32,32 +32,68 @@ Essayez de publier automatique vos release, la méthode est libre,  voici quelqu
 
 ***Good to know***:  
 
-Versions ultérieures : Pour les versions ultérieures, le numéro de version sera incrémenté en fonction des commits. Par exemple:
+**Les versions ultérieures** : Pour les versions ultérieures, le numéro de version sera incrémenté en fonction des commits. Par exemple:
 
-feat : Une nouvelle fonctionnalité, entraînant un incrément de version mineur (1.1.0).
+**feat** : Une nouvelle fonctionnalité, entraînant un incrément de version mineur (1.1.0).
 
-fix : correction d’un "bug", entraînant un incrément de version de correctif (1.0.1).
+**fix** : correction d’un "bug", entraînant un incrément de version de correctif (1.0.1).
 
-CHANGEMENT CASSANT : Un incrément de version majeur (2.0.0).
+**BREAKING CHANGE** (Changement cassant) : Un incrément de version majeur (2.0.0).
 
 Tant que vos commits suivent les normes de commit conventionnelles, release-please-action déterminera automatiquement la version appropriée. S’il n’y a pas encore de balises de version, il créera la première pour vous lorsque vous pousserez les modifications vers la branche principale.
 
-Souhaitez-vous plus de détails sur la façon de configurer les commits conventionnels ou autre chose ? Tenez moi informé!
 
+## Que fait-il ? 
 
-## Summary  
+Ce workflow automatise le processus de publication de nouvelles versions de votre projet chaque fois que vous poussez des modifications dans la branche principale. Il utilise l'action release-please de Google pour gérer la création des pull requests de publication et des versions sur GitHub.
 
-This workflow automates the process of releasing new versions of your project whenever you push changes to the main branch. It uses Google’s release-please-action to handle the creation of release pull requests and GitHub releases.
+Cette étape utilise l'action release-please de Google pour automatiser le processus de publication.
 
-This step uses the release-please action from Google to automate the release process.
+Le jeton (token) utilise un jeton d'accès personnel stocké comme un secret dans les secrets GitHub (MY_RELEASE_TEST).
 
-The token input uses a personal access token stored as a secret in GitHub secrets (MY_RELEASE_TEST).
+Le type de publication (release-type) est défini sur simple, qui est l'une des stratégies disponibles dans release-please.
 
-The release-type is set to simple, which is one of the strategies available in release-please.
+skip-github-release: false indique que la publication GitHub ne doit pas être ignorée.
 
-skip-github-release: false indicates that the GitHub release should not be skipped.
-
-skip-github-pull-request: false indicates that the GitHub pull request should not be skipped.
+skip-github-pull-request: false indique que la pull request GitHub ne doit pas être ignorée.
 
 
 
+## exemple de workflow
+
+```
+name: release after debug
+    
+
+on:
+    push:
+      branches:
+        - main
+  
+permissions:
+    contents: write
+    pull-requests: write
+  
+  
+jobs:
+    release-test:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: "Build & test"
+          run: |
+            echo "done!"
+
+        - uses: L-Christ-ASD/automatic-Release-action@v4
+          with:
+            # this assumes that you have created a personal access token
+            # (PAT) and configured it as a GitHub action secret named
+            # `MY_RELEASE_PLEASE_TOKEN` (this secret name is not important).
+            token: ${{ secrets.MY_RELEASE_TEST}}
+            # this is a built-in strategy in release-please, see "Action Inputs"
+            # for more options
+            release-type: simple
+            skip-github-release: false
+            skip-github-pull-request: false
+
+```
